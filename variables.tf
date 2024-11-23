@@ -3,19 +3,19 @@ variable "aws_region" {
 }  
 
 variable "ecr_repository_name" {  
-  default = "dev-fplarache-smartlib-notification-repo"  
+  default = "dev-fplarache-smartlib-notification-repo-aho"  
 }  
 
 variable "ecs_cluster_name" {  
-  default = "dev-fplarache-smartlib-notification-fgcluster"  
+  default = "dev-fplarache-smartlib-notification-fgcluster-aho"  
 }  
 
 variable "ecs_task_family" {  
-  default = "dev-fplarache-smartlib-notification-td"  
+  default = "dev-fplarache-smartlib-notification-td-aho"  
 }  
 
 variable "ecs_service_name" {  
-  default = "dev-fplarache-smartlib-notification-fgservice"  
+  default = "dev-fplarache-smartlib-notification-fgservice-aho"  
 }  
 
 variable "subnet_ids" {  
