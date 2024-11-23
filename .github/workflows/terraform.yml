@@ -36,6 +36,6 @@ jobs:
       - name: Terraform Plan  
         run: terraform plan  
 
-      # Étape 6 : Terraform Apply
+      # Étape 6 : Terraform Appl
       - name: Terraform Apply  
         run: terraform apply -auto-approve
