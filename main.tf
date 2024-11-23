@@ -3,13 +3,13 @@ provider "aws" {
 }
 
 
-resource "aws_ecr_repository" "app_repo" {
+resource "aws_ecr_repository" "notification_repo" {
   name                = var.ecr_repository_name
   image_tag_mutability = "MUTABLE"
 }
 
 
-resource "aws_ecs_cluster" "app_cluster" {
+resource "aws_ecs_cluster" "notification_cluster" {
   name = var.ecs_cluster_name
 }
 
