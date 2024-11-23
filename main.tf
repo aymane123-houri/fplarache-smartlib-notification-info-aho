@@ -37,7 +37,7 @@ execution_role_arn     = aws_iam_role.ecs_task_execution.arn
 
 resource "aws_ecs_service" "app_service" {
   name            = var.ecs_service_name
-  cluster         = aws_ecs_cluster.app_cluster.id
+  cluster         = aws_ecs_cluster.notification_cluster.id
   task_definition = aws_ecs_task_definition.app_task.arn
   launch_type     = "FARGATE"
 
