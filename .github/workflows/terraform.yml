@@ -38,4 +38,4 @@ jobs:
 
       # Étape 6 : Terraform Apply
       - name: Terraform Apply  
-        run: terraform apply –auto-approve
+        run: terraform apply -auto-approve
