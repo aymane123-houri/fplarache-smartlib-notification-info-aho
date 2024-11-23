@@ -20,7 +20,7 @@ resource "aws_ecs_task_definition" "app_task" {
 [
   {
     "name": "app",
-    "image": "${aws_ecr_repository.app_repo.repository_url}:latest",
+    "image": "${aws_ecr_repository.notification_repo.repository_url}:latest",
     "memory": 512,
     "cpu": 256,
     "essential": true
